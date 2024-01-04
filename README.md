@@ -1,1 +1,1 @@
-Programming with python
+Programming with python and exploring python
