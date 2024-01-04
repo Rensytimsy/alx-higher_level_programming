@@ -52,23 +52,26 @@ class Rectangle:
         return ((self.__width * 2) + (self.__height * 2))
 
     def __str__(self):
-        """Conditional statements makes sure height nor width is 0"""
+        """Return the printable representation of the Rectangle.
+
+        Represents the rectangle with the # character.
+        """
         if self.__width == 0 or self.__height == 0:
             return ("")
-        """will consist of the # """
-        boxes = []
+
+        rect = []
         for i in range(self.__height):
-            [boxes.append('#') for j in range(self.__width)]
+            [rect.append('#') for j in range(self.__width)]
             if i != self.__height - 1:
-                boxes.append("\n")
-        return ("".join(boxes))
-    
+                rect.append("\n")
+        return ("".join(rect))
+
     def __repr__(self):
         """Return the string representation of the Rectangle."""
-        boxes = "Rectangle(" + str(self.__width)
-        boxes += ", " + str(self.__height) + ")"
-        return (boxes)
+        rect = "Rectangle(" + str(self.__width)
+        rect += ", " + str(self.__height) + ")"
+        return (rect)
 
     def __del__(self):
-        """Print a message for every deletion of a Rectangle."""
+        """Deletes the rectangles"""
         print("Bye rectangle...")
