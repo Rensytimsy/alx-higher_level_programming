@@ -1,35 +1,41 @@
-#!/usr/bin/python3
-"""Below is a Rectangle class"""
-
-
 class Rectangle:
-    """Below the class has been intialized"""
     def __init__(self, width, height):
+        # Initialize the width and height attributes using the setter methods
         self.width = width
         self.height = height
 
     @property
     def width(self):
-        """Making width variable private"""
+        # Getter method for the 'width' property
         return self.__width
 
     @width.setter
     def width(self, value):
-        """Setting some conditionals for width"""
+        # Check if the provided value is an integer
         if not isinstance(value, int):
-            raise TypeError("width should be an integer")
+            raise TypeError("width must be an integer")
+
+        # Check if the value is greater than 0
         if value < 0:
             raise ValueError("width should be > 0")
+
+        # Set the value of the private attribute '__width'
         self.__width = value
 
     @property
     def height(self):
+        # Getter method for the 'height' property
         return self.__height
 
-    @width.setter
+    @height.setter
     def height(self, value):
+        # Check if the provided value is an integer
         if not isinstance(value, int):
-            raise TypeError("height should be an integer")
+            raise TypeError("height must be an integer")
+
+        # Check if the value is greater than 0
         if value < 0:
             raise ValueError("height should be > 0")
+
+        # Set the value of the private attribute '__height'
         self.__height = value
