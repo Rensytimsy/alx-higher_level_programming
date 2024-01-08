@@ -1,0 +1,5 @@
+My_list takes elements which are integers from a class list
+::
+using the sorted python built in method we return the sorted order of the values present
+::
+lastly we print the oringinal values again
