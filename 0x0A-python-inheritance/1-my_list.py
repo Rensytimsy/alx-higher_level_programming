@@ -1,3 +1,6 @@
+#!/usr/bin/python3
+
+
 class MyList(list):
     """This is MyList class that inherits from list class"""
     def __init__(self):
