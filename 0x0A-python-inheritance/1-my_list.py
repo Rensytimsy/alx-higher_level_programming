@@ -1,7 +1,5 @@
-cd#!/usr/bin/python3
-"""
-contains the MyList class
-"""
+#!/usr/bin/python3
+"""contains the MyList class"""
 
 
 class MyList(list):
