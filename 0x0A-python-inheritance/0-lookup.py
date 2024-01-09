@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Below is a function that prints the attributes and methods present in a class"""
+"""functions returns a class defination"""
 
 
 def lookup(obj):
