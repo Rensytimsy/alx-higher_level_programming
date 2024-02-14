@@ -1,0 +1,2 @@
+-- The code below will create a new database called hbtn_0c_0
+CREATE DATABASE IF EXISTS 'hbtn_0c_0';
