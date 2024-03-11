@@ -1,8 +1,9 @@
 #!/usr/bin/env node
-function print_square(size){
-    let square_symbol = "X".repeat(size);
-    for (let i = 0; i < size; i++){
-	console.log(square_symbol);
-    }
+if (isNaN(process.argv[2])){
+    console.log("Missing Number");
 }
-print_square(process.argv[2]);
+let i = 0;
+while(i < process.argv[2]){
+    console.log("X".repeat(process.argv[2]));
+    i++;
+}
