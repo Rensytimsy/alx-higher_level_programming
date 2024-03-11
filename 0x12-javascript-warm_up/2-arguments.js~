@@ -1,0 +1,4 @@
+#!/usr/bin/env node
+if (console.log[0] == " "){
+    console.log("No argument");
+}
